@@ -1,0 +1,101 @@
+/* ==========================================================================
+   CHETTINAD ARCHITECTURE DESIGN SYSTEM - VARIABLES
+   Visual Identity: Old Chettinad Mansion + Editorial Architecture + Cinematic
+   ========================================================================== */
+
+:root {
+  /* Primary Chettinad Palette */
+  --color-terracotta: #C85A32;
+  --color-terracotta-dark: #A3401B;
+  --color-rust: #8C381E;
+  --color-burnt-orange: #D96B27;
+  --color-ochre: #C68B34;
+  --color-deep-crimson: #6B1D2F;
+  --color-dark-teak: #2C1A14;
+  --color-dark-teak-deep: #180D09;
+
+  /* Supporting Earth & Plaster Tones */
+  --color-warm-ivory: #F7F3E9;
+  --color-lime-plaster: #EFEBE1;
+  --color-warm-beige: #E3D7C5;
+  --color-sand: #D5C4A1;
+  --color-stone-grey: #7E7870;
+  --color-charcoal: #1C1B19;
+
+  /* Athangudi Tile & Brass Accents */
+  --color-athangudi-emerald: #1C5243;
+  --color-athangudi-cobalt: #1F3A5F;
+  --color-mustard-yellow: #E5A93B;
+  --color-antique-brass: #D4AF37;
+
+  /* Glassmorphism & Translucency */
+  --glass-dark-bg: rgba(28, 27, 25, 0.75);
+  --glass-dark-border: rgba(213, 196, 161, 0.15);
+  --glass-light-bg: rgba(247, 243, 233, 0.85);
+  --glass-light-border: rgba(200, 90, 50, 0.12);
+
+  /* Typography Families */
+  --font-display: 'Cinzel Decorative', 'Cinzel', serif;
+  --font-heading: 'Cinzel', serif;
+  --font-editorial: 'Cormorant Garamond', serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+  /* Typography Scales */
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+  --text-base: clamp(1rem, 0.95rem + 0.4vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1.05rem + 0.6vw, 1.35rem);
+  --text-xl: clamp(1.35rem, 1.2rem + 0.9vw, 1.75rem);
+  --text-2xl: clamp(1.75rem, 1.5rem + 1.5vw, 2.5rem);
+  --text-3xl: clamp(2.5rem, 2rem + 2.5vw, 3.75rem);
+  --text-4xl: clamp(3.5rem, 2.8rem + 3.5vw, 5.5rem);
+  --text-hero: clamp(4rem, 3.2rem + 4.8vw, 7.5rem);
+
+  /* Letter Spacing */
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0em;
+  --tracking-wide: 0.05em;
+  --tracking-widest: 0.25em;
+
+  /* Line Heights */
+  --leading-tight: 1.1;
+  --leading-heading: 1.2;
+  --leading-relaxed: 1.6;
+  --leading-loose: 1.85;
+
+  /* Spacing System */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+  --space-48: 12rem;
+
+  /* Layout & Container */
+  --container-max-width: 1440px;
+  --container-padding-desktop: 4rem;
+  --container-padding-tablet: 2rem;
+  --container-padding-mobile: 1.25rem;
+
+  /* Transitions & Animation Timings */
+  --ease-cinematic: cubic-bezier(0.25, 1, 0.35, 1);
+  --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 0.3s;
+  --duration-normal: 0.6s;
+  --duration-slow: 1.2s;
+
+  /* Z-Index Layers */
+  --z-background: -10;
+  --z-base: 1;
+  --z-content: 10;
+  --z-sticky: 100;
+  --z-header: 500;
+  --z-overlay: 900;
+  --z-intro: 1000;
+  --z-cursor: 9999;
+}

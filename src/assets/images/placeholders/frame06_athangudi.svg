@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#180D09"/>
+  <!-- Athangudi Tile Pattern Grid -->
+  <pattern id="athangudiGrid" width="240" height="240" patternUnits="userSpaceOnUse">
+    <rect width="240" height="240" fill="#1C5243"/>
+    <rect x="10" y="10" width="220" height="220" fill="#251510" stroke="#C68B34" stroke-width="3"/>
+    <path d="M 120 20 L 220 120 L 120 220 L 20 120 Z" fill="#8C381E" stroke="#D4AF37" stroke-width="2"/>
+    <circle cx="120" cy="120" r="50" fill="#C68B34"/>
+    <circle cx="120" cy="120" r="25" fill="#F7F3E9"/>
+  </pattern>
+  
+  <rect width="1920" height="1080" fill="url(#athangudiGrid)"/>
+  
+  <rect x="460" y="440" width="1000" height="200" fill="rgba(16,7,4,0.9)" stroke="#D4AF37" stroke-width="3" rx="8"/>
+  <text x="960" y="520" text-anchor="middle" fill="#F7F3E9" font-family="serif" font-size="34" letter-spacing="6">
+    ATHANGUDI HANDCRAFTED TILES
+  </text>
+  <text x="960" y="570" text-anchor="middle" fill="#C68B34" font-family="sans-serif" font-size="16" letter-spacing="4">
+    FRAME 06 — MATERIAL ARTISTRY
+  </text>
+</svg>

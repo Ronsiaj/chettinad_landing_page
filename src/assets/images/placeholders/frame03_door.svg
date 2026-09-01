@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#100704"/>
+  <!-- Doorframe Surround -->
+  <rect x="360" y="80" width="1200" height="920" fill="#2C1A14" stroke="#8C381E" stroke-width="8"/>
+  
+  <!-- Left Teak Door Panel -->
+  <g id="left-door">
+    <rect x="380" y="100" width="570" height="880" fill="#3D2319" stroke="#180D09" stroke-width="4"/>
+    <rect x="420" y="140" width="490" height="360" fill="#251510" stroke="#C68B34" stroke-width="3"/>
+    <rect x="420" y="540" width="490" height="400" fill="#251510" stroke="#C68B34" stroke-width="3"/>
+    <!-- Brass Studs & Ring Handle -->
+    <circle cx="890" cy="520" r="16" fill="#D4AF37" stroke="#180D09" stroke-width="3"/>
+    <circle cx="890" cy="520" r="8" fill="#180D09"/>
+  </g>
+  
+  <!-- Right Teak Door Panel -->
+  <g id="right-door">
+    <rect x="970" y="100" width="570" height="880" fill="#3D2319" stroke="#180D09" stroke-width="4"/>
+    <rect x="1010" y="140" width="490" height="360" fill="#251510" stroke="#C68B34" stroke-width="3"/>
+    <rect x="1010" y="540" width="490" height="400" fill="#251510" stroke="#C68B34" stroke-width="3"/>
+    <!-- Brass Studs & Ring Handle -->
+    <circle cx="1030" cy="520" r="16" fill="#D4AF37" stroke="#180D09" stroke-width="3"/>
+    <circle cx="1030" cy="520" r="8" fill="#180D09"/>
+  </g>
+  
+  <text x="960" y="940" text-anchor="middle" fill="#F7F3E9" font-family="serif" font-size="28" letter-spacing="4">
+    BURMA TEAK HEIRLOOM DOOR
+  </text>
+</svg>

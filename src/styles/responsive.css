@@ -1,0 +1,56 @@
+/* ==========================================================================
+   RESPONSIVE & ACCESSIBILITY BREAKPOINTS
+   ========================================================================== */
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .scene-container {
+    padding: var(--space-16) var(--container-padding-tablet);
+  }
+
+  .grid-2col {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .grid-3col {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .scene-container {
+    padding: var(--space-12) var(--container-padding-mobile);
+    min-height: auto;
+  }
+
+  .grid-3col {
+    grid-template-columns: 1fr;
+  }
+
+  /* Disable heavy parallax effects on mobile for performance */
+  .mobile-static {
+    transform: none !important;
+  }
+
+  .scene-tag {
+    font-size: 0.65rem;
+    padding: 0.25rem 0.75rem;
+  }
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+}

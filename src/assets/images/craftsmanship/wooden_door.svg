@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1200" viewBox="0 0 800 1200">
+  <rect width="800" height="1200" fill="#180D09"/>
+  <rect x="40" y="40" width="720" height="1120" fill="none" stroke="#C68B34" stroke-width="4"/>
+  <rect x="80" y="80" width="300" height="480" fill="#2C1A14" stroke="#8C381E" stroke-width="2"/>
+  <rect x="420" y="80" width="300" height="480" fill="#2C1A14" stroke="#8C381E" stroke-width="2"/>
+  <rect x="80" y="600" width="300" height="500" fill="#2C1A14" stroke="#8C381E" stroke-width="2"/>
+  <rect x="420" y="600" width="300" height="500" fill="#2C1A14" stroke="#8C381E" stroke-width="2"/>
+  <circle cx="400" cy="580" r="30" fill="#D4AF37"/>
+  <text x="400" y="320" text-anchor="middle" fill="#F7F3E9" font-family="serif" font-size="24" letter-spacing="3">
+    BURMA TEAK DOOR
+  </text>
+</svg>

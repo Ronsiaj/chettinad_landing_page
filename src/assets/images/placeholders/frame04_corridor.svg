@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <rect width="1920" height="1080" fill="#180D09"/>
+  <!-- Perspective Corridor Floor & Ceiling -->
+  <polygon points="0,0 1920,0 1320,380 600,380" fill="#2C1A14" stroke="#8C381E" stroke-width="4"/>
+  <polygon points="0,1080 1920,1080 1320,700 600,700" fill="#3D2319" stroke="#C68B34" stroke-width="4"/>
+  <rect x="600" y="380" width="720" height="320" fill="#100704" stroke="#D4AF37" stroke-width="4"/>
+  
+  <!-- Perspective Pillars -->
+  <polygon points="100,0 220,0 380,1080 200,1080" fill="#8C381E"/>
+  <polygon points="380,180 440,180 560,900 480,900" fill="#C68B34"/>
+  <polygon points="1820,0 1700,0 1540,1080 1720,1080" fill="#8C381E"/>
+  <polygon points="1540,180 1480,180 1360,900 1440,900" fill="#C68B34"/>
+  
+  <text x="960" y="520" text-anchor="middle" fill="#F7F3E9" font-family="Cinzel, serif" font-size="38" font-weight="700" letter-spacing="8">
+    COLUMNED PASSAGEWAY
+  </text>
+  <text x="960" y="570" text-anchor="middle" fill="#C68B34" font-family="sans-serif" font-size="18" letter-spacing="4">
+    FRAME 04 — THINNAI CORRIDOR
+  </text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <rect width="800" height="800" fill="#1C5243"/>
+  <circle cx="400" cy="400" r="300" fill="none" stroke="#E5A93B" stroke-width="4"/>
+  <circle cx="400" cy="400" r="220" fill="none" stroke="#C85A32" stroke-width="3"/>
+  <path d="M 400 100 L 700 400 L 400 700 L 100 400 Z" fill="none" stroke="#E5A93B" stroke-width="3"/>
+  <circle cx="400" cy="400" r="80" fill="#180D09" stroke="#E5A93B" stroke-width="2"/>
+  <text x="400" y="405" text-anchor="middle" fill="#F7F3E9" font-family="serif" font-size="20" letter-spacing="2">
+    ATHANGUDI TILE
+  </text>
+</svg>
