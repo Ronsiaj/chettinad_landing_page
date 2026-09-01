@@ -287,11 +287,56 @@ export function CementOrLimeSection() {
           }}
         />
 
+        <style>{`
+          @media (max-width: 768px) {
+            .why-us-header-block {
+              top: clamp(4.2rem, 8vh, 5.2rem) !important;
+            }
+            .why-us-header-block h2 {
+              font-size: clamp(1.05rem, 3.8vw, 1.45rem) !important;
+              line-height: 1.25 !important;
+            }
+            .why-us-layout-container {
+              flex-direction: column !important;
+              top: clamp(9.2rem, 19vh, 11rem) !important;
+              bottom: 2.2rem !important;
+              gap: 0.6rem !important;
+              justify-content: flex-start !important;
+            }
+            .why-us-img-box {
+              width: 100% !important;
+              flex: 0 0 clamp(120px, 18vh, 165px) !important;
+              height: clamp(120px, 18vh, 165px) !important;
+            }
+            .why-us-card-box {
+              width: 100% !important;
+              flex: 1 1 auto !important;
+              height: auto !important;
+            }
+            .why-us-card-box > div {
+              padding: clamp(0.8rem, 2vw, 1.2rem) !important;
+              gap: 0.5rem !important;
+            }
+            .why-us-card-box h3 {
+              font-size: clamp(1.05rem, 3.5vw, 1.35rem) !important;
+              margin-bottom: 0.15rem !important;
+            }
+            .why-us-card-box p {
+              font-size: clamp(0.82rem, 2.7vw, 0.95rem) !important;
+              line-height: 1.38 !important;
+            }
+            .why-us-dots-bar {
+              bottom: 0.5rem !important;
+            }
+          }
+        `}</style>
+
         {/* ═══════════════════════════════════════════════════════
             TOP FIXED SECTION HEADER & STATEMENT
             ═══════════════════════════════════════════════════════ */}
         <div
           ref={introBlockRef}
+          className="why-us-header-block"
           style={{
             position: 'absolute',
             top: 'clamp(5.5rem, 11vh, 7.5rem)',
@@ -361,6 +406,7 @@ export function CementOrLimeSection() {
             MAIN EDITORIAL LAYOUT (52% VISUAL / 48% TEXT)
             ═══════════════════════════════════════════════════════ */}
         <div
+          className="why-us-layout-container"
           style={{
             position: 'absolute',
             inset: 0,
@@ -377,6 +423,7 @@ export function CementOrLimeSection() {
         >
           {/* ── LEFT ARCHITECTURAL VISUAL CONTAINER ── */}
           <div
+            className="why-us-img-box"
             style={{
               flex: '0 1 clamp(320px, 52vw, 680px)',
               width: '52vw',
@@ -447,6 +494,7 @@ export function CementOrLimeSection() {
 
           {/* ── RIGHT EDITORIAL PRINCIPLE CARD STACK ── */}
           <div
+            className="why-us-card-box"
             style={{
               flex: '0 1 clamp(280px, 34vw, 420px)',
               position: 'relative',
@@ -551,6 +599,7 @@ export function CementOrLimeSection() {
             BOTTOM SCROLL INDICATOR / PROGRESS DOTS
             ═══════════════════════════════════════════════════════ */}
         <div
+          className="why-us-dots-bar"
           style={{
             position: 'absolute',
             bottom: '1.5rem',

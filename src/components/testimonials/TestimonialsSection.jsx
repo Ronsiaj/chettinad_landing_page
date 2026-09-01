@@ -386,11 +386,35 @@ export function TestimonialsSection() {
           />
         </svg>
 
+        <style>{`
+          @media (max-width: 768px) {
+            .testimonials-header-block {
+              top: clamp(4.5rem, 9vh, 5.5rem) !important;
+            }
+            .testimonials-header-quote {
+              display: none !important;
+            }
+            .testimonials-stack-container {
+              padding-top: clamp(8rem, 16vh, 10rem) !important;
+              padding-left: 1.2rem !important;
+              padding-right: 1.2rem !important;
+            }
+            .testimonials-quote-card {
+              gap: 1rem !important;
+            }
+            .testimonials-quote-card blockquote {
+              font-size: clamp(1rem, 3.8vw, 1.35rem) !important;
+              line-height: 1.45 !important;
+            }
+          }
+        `}</style>
+
         {/* ═══════════════════════════════════════════════════════
             LAYER 3: FIXED SECTION HEADER
             ═══════════════════════════════════════════════════════ */}
         <div
           ref={introHeaderRef}
+          className="testimonials-header-block"
           style={{
             position: 'absolute',
             top: 'clamp(5.5rem, 11vh, 7.5rem)',
@@ -435,7 +459,7 @@ export function TestimonialsSection() {
             </h2>
           </div>
 
-          <div style={{ textAlign: 'right' }}>
+          <div className="testimonials-header-quote" style={{ textAlign: 'right' }}>
             <p
               style={{
                 fontFamily: 'var(--font-editorial)',
@@ -455,6 +479,7 @@ export function TestimonialsSection() {
             LAYER 4: EDITORIAL TESTIMONIAL QUOTE STACK
             ═══════════════════════════════════════════════════════ */}
         <div
+          className="testimonials-stack-container"
           style={{
             position: 'absolute',
             inset: 0,
@@ -469,6 +494,7 @@ export function TestimonialsSection() {
             <div
               key={t.id}
               ref={(el) => setQuoteCardRef(el, idx)}
+              className="testimonials-quote-card"
               style={{
                 position: 'absolute',
                 width: '100%',
@@ -478,6 +504,7 @@ export function TestimonialsSection() {
                 flexDirection: 'column',
                 alignItems: 'center',
                 gap: '1.8rem',
+                opacity: idx === 0 ? 1 : 0,
                 willChange: 'opacity, transform',
               }}
             >
@@ -565,6 +592,7 @@ export function TestimonialsSection() {
               flexDirection: 'column',
               alignItems: 'center',
               gap: '1.2rem',
+              opacity: 0,
               willChange: 'opacity, transform',
             }}
           >

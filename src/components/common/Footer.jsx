@@ -78,10 +78,47 @@ export function Footer() {
         overflow: 'hidden',
       }}
     >
+      <style>{`
+        @media (max-width: 768px) {
+          .footer-frame-container {
+            min-height: 440px !important;
+            padding: 3rem 1rem !important;
+          }
+          .footer-closing-heading {
+            font-size: clamp(1.4rem, 5.2vw, 2.1rem) !important;
+            letter-spacing: 0.05em !important;
+          }
+          .footer-closing-quote {
+            font-size: clamp(0.95rem, 3.5vw, 1.15rem) !important;
+            margin-bottom: 1.8rem !important;
+          }
+          .footer-info-grid {
+            grid-template-columns: 1fr !important;
+            gap: 2rem !important;
+            text-align: center !important;
+          }
+          .footer-brand-col {
+            align-items: center !important;
+          }
+          .footer-nav-col ul {
+            align-items: center !important;
+          }
+          .footer-nav-col button {
+            text-align: center !important;
+          }
+          .footer-copyright-bar {
+            flex-direction: column !important;
+            text-align: center !important;
+            gap: 0.5rem !important;
+          }
+        }
+      `}</style>
+
       {/* ═══════════════════════════════════════════════════════
           PART 1: THE FINAL ARCHITECTURAL FRAME (EMOTIONAL END)
           ═══════════════════════════════════════════════════════ */}
       <div
+        className="footer-frame-container"
         style={{
           position: 'relative',
           width: '100%',
@@ -168,6 +205,7 @@ export function Footer() {
           </div>
 
           <h2
+            className="footer-closing-heading"
             style={{
               fontFamily: 'var(--font-display)',
               fontSize: 'clamp(2.2rem, 4.5vw, 3.8rem)',
@@ -186,6 +224,7 @@ export function Footer() {
           </h2>
 
           <p
+            className="footer-closing-quote"
             style={{
               fontFamily: 'var(--font-editorial)',
               fontSize: 'clamp(1.1rem, 1.6vw, 1.4rem)',
@@ -244,6 +283,7 @@ export function Footer() {
         }}
       >
         <div
+          className="footer-info-grid"
           style={{
             maxWidth: '1200px',
             margin: '0 auto',
@@ -254,7 +294,7 @@ export function Footer() {
           }}
         >
           {/* BRAND COL */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
+          <div className="footer-brand-col" style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
               <img
                 src={logoImg}
@@ -290,7 +330,7 @@ export function Footer() {
           </div>
 
           {/* NAVIGATION COL */}
-          <div>
+          <div className="footer-nav-col">
             <div
               style={{
                 fontFamily: 'var(--font-sans)',
@@ -395,6 +435,7 @@ export function Footer() {
 
         {/* BOTTOM COPYRIGHT BAR */}
         <div
+          className="footer-copyright-bar"
           style={{
             maxWidth: '1200px',
             margin: '0 auto',

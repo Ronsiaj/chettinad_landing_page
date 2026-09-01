@@ -205,6 +205,25 @@ export function ProjectsSection() {
           justifyContent: 'center',
         }}
       >
+        {/* Responsive Style Block */}
+        <style>{`
+          @media (max-width: 768px) {
+            .projects-header-block {
+              top: clamp(4rem, 8vh, 5rem) !important;
+            }
+            .projects-track-container {
+              padding-top: clamp(9.5rem, 20vh, 11.5rem) !important;
+              gap: 1.5rem !important;
+            }
+            .project-card-item {
+              width: clamp(260px, 82vw, 420px) !important;
+            }
+            .project-card-img {
+              height: clamp(180px, 34vh, 320px) !important;
+            }
+          }
+        `}</style>
+
         {/* Subtle Ambient Background Lighting */}
         <div
           style={{
@@ -224,9 +243,10 @@ export function ProjectsSection() {
             Maintains context as projects move horizontally
             ═══════════════════════════════════════════════════════ */}
         <div
+          className="projects-header-block"
           style={{
             position: 'absolute',
-            top: 'clamp(5.5rem, 11vh, 7.5rem)',
+            top: 'clamp(4.2rem, 7.5vh, 5.8rem)',
             left: 'clamp(4%, 6vw, 8%)',
             right: 'clamp(4%, 6vw, 8%)',
             zIndex: 10,
@@ -306,10 +326,11 @@ export function ProjectsSection() {
             ═══════════════════════════════════════════════════════ */}
         <div
           ref={trackRef}
+          className="projects-track-container"
           style={{
             display: 'flex',
             alignItems: 'flex-start',
-            paddingTop: 'clamp(10rem, 20vh, 13rem)',
+            paddingTop: 'clamp(12.5rem, 23vh, 15.5rem)',
             paddingBottom: 'clamp(2rem, 4vh, 3rem)',
             paddingLeft: 'clamp(4%, 6vw, 8%)',
             paddingRight: '30vw',
@@ -354,6 +375,7 @@ export function ProjectsSection() {
             <div
               key={project.id}
               ref={(el) => setCardRef(el, idx)}
+              className="project-card-item"
               style={{
                 flexShrink: 0,
                 width: 'clamp(300px, 58vw, 820px)',
@@ -364,6 +386,7 @@ export function ProjectsSection() {
             >
               {/* Architectural Image Container */}
               <div
+                className="project-card-img"
                 style={{
                   position: 'relative',
                   width: '100%',

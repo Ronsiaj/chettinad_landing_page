@@ -233,6 +233,44 @@ export function CourtyardSection() {
             animation: banyanSwayRight 7.2s ease-in-out infinite;
             animation-delay: 1.4s;
           }
+
+          @media (max-width: 768px) {
+            .banyan-branch-left-wrap {
+              top: 3.8rem !important;
+              left: -0.5rem !important;
+            }
+            .banyan-branch-left-wrap img {
+              width: clamp(80px, 20vw, 120px) !important;
+              opacity: 0.65 !important;
+            }
+            .banyan-branch-right-wrap {
+              bottom: 0.5rem !important;
+              right: -0.5rem !important;
+            }
+            .banyan-branch-right-wrap img {
+              width: clamp(80px, 20vw, 120px) !important;
+              opacity: 0.65 !important;
+            }
+            .banyan-sway-left {
+              animation-duration: 7s !important;
+            }
+            .banyan-sway-right {
+              animation-duration: 8.5s !important;
+            }
+            .courtyard-content-wrapper {
+              padding-top: clamp(4.5rem, 10vh, 6rem) !important;
+              padding-bottom: clamp(1.5rem, 3vh, 2.5rem) !important;
+            }
+            .courtyard-principles-grid {
+              grid-template-columns: 1fr !important;
+              gap: 0.8rem !important;
+              padding-top: 0.8rem !important;
+              margin-top: 0.8rem !important;
+            }
+            .courtyard-principles-grid p {
+              display: none !important;
+            }
+          }
         `}</style>
 
         {/* LAYER 1: BACKGROUND — Open-Air Courtyard Image (Mutram) */}
@@ -274,6 +312,7 @@ export function CourtyardSection() {
         {/* LAYER 2: FOREGROUND CONTENT — Centered Editorial Layout */}
         <div
           ref={contentRef}
+          className="courtyard-content-wrapper"
           style={{
             position: 'relative',
             zIndex: 2,
@@ -378,6 +417,7 @@ export function CourtyardSection() {
 
           {/* LOWER AREA: THREE SHORT COURTYARD PRINCIPLES */}
           <div
+            className="courtyard-principles-grid"
             style={{
               display: 'grid',
               gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
@@ -519,6 +559,7 @@ export function CourtyardSection() {
         {/* LAYER 3: FOREGROUND — Banyan Tree Branches with Wind Sway */}
         <div
           ref={branchLeftRef}
+          className="banyan-branch-left-wrap"
           style={{
             position: 'absolute',
             top: '-3%',
@@ -544,6 +585,7 @@ export function CourtyardSection() {
 
         <div
           ref={branchRightRef}
+          className="banyan-branch-right-wrap"
           style={{
             position: 'absolute',
             bottom: '-3%',
